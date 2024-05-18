@@ -1,0 +1,60 @@
+# EEGLAB Analysis Steps
+
+This document describes the steps followed in EEGLAB to analyze EEG data for the experiment.
+
+## 1. Load Data
+- Open EEGLAB by typing `eeglab` in the Matlab command window.
+- In EEGLAB, go to `File > Load existing dataset`.
+- Select the EEG data file (`.set` or `.fdt`) and load it.
+
+## 2. Preprocessing
+### a. Import Channel Locations
+- Go to `Edit > Channel locations`.
+- Load the channel location file (`electrode_loc_24.ced `).
+
+### b. Resample 
+- Go to `Tools > Chage sampling rate`.
+- Resample to 512Hz.
+
+### c. Filter Data
+- Go to `Tools > Filter the data`.
+- Apply a bandpass filter (2 Hz to 50 Hz).
+
+### d. Remove Artifacts
+- Use the `Tools > Reject continuous data by eye` to manually remove artifacts.
+
+### e. Re-reference to Common Reference
+- Go to `Tools > Re-reference`.
+- Select `Average reference` to re-reference the data to the common average reference.
+- Ensure all channels are included in the average reference calculation.
+
+## 3. Independent Component Analysis (ICA)
+- Go to `Tools > Run ICA`.
+- Select the ICA algorithm and run the analysis.
+
+## 4. Analysis
+### a. Create Study with Four Experimental Conditions
+- Go to `Study > Create study`.
+- Define the study with the four experimental conditions as a factor.
+- Add the datasets corresponding to each condition.
+
+### b. Precompute Channel Measures
+- Go to `Tools > Precompute channel measures`.
+- Select the power spectral density.
+- Ensure all channels and conditions are included in the computation.
+
+### c. Plot Results
+- Go to `Plot > Channel measures`.
+- Select the measures and parameters for the analysis.
+- Generate the plots for the different conditions.
+
+## 5. Save Results
+- Save the processed data and results by going to `File > Save current dataset`.
+- Save the figures and other outputs as needed.
+
+## Additional Notes
+- Include any other relevant details or parameters used in the analysis.
+- Document any deviations from standard procedures.
+
+## Contact
+For more information or questions, contact Pedro Cortes (mailto:pedro.cortes@tec.mx).
