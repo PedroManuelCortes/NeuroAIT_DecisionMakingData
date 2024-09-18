@@ -11,8 +11,6 @@ This repository contains the dataset and analysis code for the study "The Impact
 - `analysis/`: Contains analysis scripts.
   - `R/`: Scripts written in R for data analysis.
   - `matlab/`: Scripts written in Matlab for EEG data preprocessing and analysis.
-- `documentation/`: Related documents such as research articles and reports.
-- `results/`: Analysis results such as graphs and tables.
 
 
 ## Participant and Experimental Condition Codes
