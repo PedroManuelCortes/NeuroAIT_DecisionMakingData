@@ -7,9 +7,12 @@ This repository contains the dataset and analysis code for the study "The Impact
 - `data/`: Contains data files.
   - `behavioral/`: Behavioral data files.
   - `EEG/`: EEG data files.
+- `IGT(v1.3)/`: Contains the PsychoPy implementation of the decision-making experiment (Iowa Gambling Task).
 - `analysis/`: Contains analysis scripts.
-  - `R/`: Scripts written in R.
-  - `matlab/`: Matlab use instructions.
+  - `R/`: Scripts written in R for data analysis.
+  - `matlab/`: Scripts written in Matlab for EEG data preprocessing and analysis.
+- `documentation/`: Related documents such as research articles and reports.
+- `results/`: Analysis results such as graphs and tables.
 
 
 ## Participant and Experimental Condition Codes
